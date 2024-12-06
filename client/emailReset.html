@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .h1 {
+            font-size: 8px;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: #fe692f;
+        }
+
+        .linkBtn {
+            border: none;
+            outline: none;
+            padding: 10px;
+            cursor: pointer;
+            color: #ffffff;
+            border-radius: 6px;
+            text-transform: capitalize;
+            background-color: #fe692f;
+        }
+
+        a {
+            text-decoration: none !important;
+            color: #ffffff !important;
+        }
+
+
+        .linkBtn:hover {
+            background-color: #fe692f;
+        }
+
+        .logo {
+            max-width: 200px;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        .content-foot {
+            margin-top: 10px;
+        }
+
+        .content-foot p {
+            font-size: 1rem;
+        }
+
+        .content-foot span {
+            text-transform: capitalize;
+        }
+
+        .footer {
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #ffffff;
+            text-align: center;
+            background-color: #fe692f;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-links {
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .social-links a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .social-image {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="logo"
+                src="https://raw.githubusercontent.com/DarknessMonarch/slimpath/refs/heads/master/public/assets/banner.png"
+                alt="slimpath logo">
+        </div>
+
+        <div class="content">
+            <p>Hello {{username}},</p>
+            <h3>Your password reset link will expire in 1 hour</h3>
+            <p>Click on the <button class="linkBtn"><a href="{{resetUrl}}">link</a></button> to reset your password.</p>
+            <p>Ignore this email if it is not you who has requested for the reset link</p>
+
+        </div>
+
+        <div class="footer">
+            <p>Slimpath</p>
+            <p>Phone: (+1) 484-744-0421</p>
+            <p>Email: slimpath73@gmail.com</p>
+            <p>You are receiving this email because you want to reset password.</p>
+            <div class="social-icons">
+                <div class="social-links">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="https://raw.githubusercontent.com/DarknessMonarch/slimpath/f91b9ad5d76b122082aaf27b3eff1c07c6841069/public/icons/instagram.svg"
+                            alt="instagram" class="social-image">
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <img src="https://raw.githubusercontent.com/DarknessMonarch/slimpath/f91b9ad5d76b122082aaf27b3eff1c07c6841069/public/icons/linkedIn.svg"
+                            alt="linkedin" class="social-image">
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.telegram.com/" target="_blank">
+                        <img src="https://raw.githubusercontent.com/DarknessMonarch/slimpath/f91b9ad5d76b122082aaf27b3eff1c07c6841069/public/icons/telegram.svg"
+                            alt="telegram" class="social-image">
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img src="https://raw.githubusercontent.com/DarknessMonarch/slimpath/f91b9ad5d76b122082aaf27b3eff1c07c6841069/public/icons/twitter.svg"
+                            alt="twitter" class="social-image">
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.whatsapp.com/" target="_blank">
+                        <img src="https://raw.githubusercontent.com/DarknessMonarch/slimpath/f91b9ad5d76b122082aaf27b3eff1c07c6841069/public/icons/whatsapp.svg"
+                            alt="whatsapp" class="social-image">
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="https://raw.githubusercontent.com/DarknessMonarch/slimpath/f91b9ad5d76b122082aaf27b3eff1c07c6841069/public/icons/youtube.svg"
+                            alt="youtube" class="social-image">
+                    </a>
+                </div>
+     
+            </div>
+            <p>Copyright (C) 2024 slimpath.com All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>
