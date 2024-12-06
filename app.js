@@ -17,12 +17,28 @@ connectDB();
 
 const PORT = process.env.PORT || 5000;
 
+
+const corsOptions = {
+  origin: 'https://slimpath.vercel.app', 
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: [
+    'Content-Type', 
+    'Authorization', 
+    'Access-Control-Allow-Credentials'
+  ],
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+
+
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(helmet());
 app.use(morgan("dev"));
+
+app.options('/api/v1/auth/profile-image', cors(corsOptions));
 
 // Session setup
 app.use(

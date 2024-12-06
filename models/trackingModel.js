@@ -25,6 +25,24 @@ const trackingSchema = new mongoose.Schema({
       type: Number,
       min: [0, 'Calories cannot be negative']
     },
+    mealDistribution: {
+      morning: {
+          calories: Number,
+          description: String,
+          recommendedMeals: [String]
+      },
+      afternoon: {
+          calories: Number,
+          description: String,
+          recommendedMeals: [String]
+      },
+      night: {
+          calories: Number,
+          description: String,
+          recommendedMeals: [String]
+      },
+      total: Number
+  },
     weeklyProgress: [
       {
         week: {
