@@ -11,7 +11,7 @@ const helmet = require("helmet");
 const { connectDB } = require("./config/db");
 const bodyParser = require("body-parser");
 const authRoute = require("./routes/authRoute");
-const trackingRoute = require("./routes/trackingRoutes"); 
+const trackingRoute = require("./routes/trackingRoutes");
 
 connectDB();
 
@@ -19,12 +19,11 @@ const PORT = process.env.PORT || 5000;
 
 
 const corsOptions = {
-  origin: 'https://slimpath.vercel.app', 
+  origin: 'https://slimpath.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: [
-    'Content-Type', 
-    'Authorization', 
-    'Access-Control-Allow-Credentials'
+    'Content-Type',
+    'Authorization',
   ],
   credentials: true,
   optionsSuccessStatus: 200
@@ -53,7 +52,7 @@ app.use(
   })
 );
 
-app.use("/api/v1/auth", authRoute); 
+app.use("/api/v1/auth", authRoute);
 app.use("/api/v1/calories", trackingRoute);
 
 // Serve frontend
